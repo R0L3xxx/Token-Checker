@@ -11,12 +11,12 @@ Token Checker is a Python program that validates Discord tokens by checking thei
 Install the required dependencies: ```
 
 
-``pip install -r requirements.txt```
+``pip install -r requirements.txt``
 
 Run the program:
 
 
-```python token_checker.py```
+``python token_checker.py``
 
 Usage
 The program will load the tokens from the tokens.txt file.
