@@ -28,6 +28,6 @@ valid_tokens.txt: File to save valid tokens.
 invalid_tokens.txt: File to save invalid tokens.
 
 
-#Contributing
+# Contributing
 Contributions are welcome! If you have any suggestions, improvements, or bug fixes, feel free to open an issue or create a pull request.
 
