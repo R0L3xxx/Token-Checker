@@ -77,19 +77,6 @@ class TokenChecker:
                 for token in self.invalid_tokens:
                     file.write(f"{token}\n")
 
-    def get_nitro_expire_date(self, token):
-        try:
-            response = self.session.get("https://discord.com/api/v9/users/@me/billing/subscriptions", headers={'Authorization': token})
-            if response.status_code == 200:
-                subscriptions = response.json()
-                for subscription in subscriptions:
-                    if 'trial_ends_at' in subscription:
-                        expire_date = subscription['trial_ends_at']
-                        return datetime.fromisoformat(expire_date).replace(tzinfo=pytz.utc).strftime('%Y-%m-%d %H:%M:%S')
-            return "Not Found"
-        except requests.exceptions.RequestException as e:
-            print(f"Error getting Nitro expire for token {token}: {str(e)}")
-            return "Not Found"
 
 def main():
     checker = TokenChecker()
