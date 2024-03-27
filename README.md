@@ -10,4 +10,4 @@ Token Checker is a Python script for validating Discord tokens and saving valid 
 
 1 . Install the required dependencies:
     ```sh
-pip install -r requirements.txt
+pip install -r requirements.txt```
